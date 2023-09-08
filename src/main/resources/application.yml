@@ -1,0 +1,74 @@
+server:
+  port: 6070
+  servlet:
+    context-path: /
+  undertow:
+    accesslog:
+      prefix: "[PROJECT-API]"
+
+spring:
+  main:
+    banner-mode: 'off'
+  output:
+    ansi:
+      enabled: 'always'
+  application:
+    name: project-api
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/project
+    username: amigoscode
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+    show-sql: false
+  zipkin:
+    base-url: http://localhost:9411
+
+#ACTUATOR
+management:
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: false
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+
+info:
+  app:
+    name: '@project.name@'
+    description: '@project.description@'
+    version: '@project.version@'
+    encoding: '@project.build.sourceEncoding@'
+    java:
+      version: '@java.version@'
+
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{1}: %msg%n'
+  level:
+    root: INFO
+    com.dpaula: DEBUG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+client:
+  customer:
+    url: http://localhost:6060
+
