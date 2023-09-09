@@ -26,6 +26,11 @@ Existem dois pré requisitos para execução da API:
       liberada)
         - Para subir o Servidor de Banco de Dados via docker basta estar na raiz do projeto, e executar o comando abaixo
         - ```docker-compose up -d postgres pgadmin```
+        - Obs: Será preciso criar as bases de dados manualmente no pgadmin, pois o mesmo não está configurado para
+          criar automaticamente
+            - Nome da base de dados para customer-api: customer
+            - Nome da base de dados para project-api: project
+            - Link para acesso ao pgadmin: [pgadmin](http://localhost:5050/browser/) (senha: "password")
 - Zipkin (monitoramento e tracing)
     - Zipkin é uma ferramenta poderosa para monitorar e solucionar problemas em aplicativos distribuídos,
       permitindo que os desenvolvedores acompanhem o fluxo das solicitações e identifiquem possíveis problemas
