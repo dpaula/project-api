@@ -3,11 +3,12 @@ package com.lima.projectapi.payload;
 import com.lima.projectapi.entity.Project;
 import com.lima.projectapi.enuns.EnTipoStatus;
 
+import javax.validation.constraints.NotEmpty;
 import java.time.LocalDateTime;
 import java.util.List;
 
 public record ProjectRequest(Integer id,
-                             String nome,
+                             @NotEmpty String nome,
                              String descricao,
                              EnTipoStatus status,
                              LocalDateTime dataInclusao,
