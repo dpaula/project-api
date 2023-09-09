@@ -111,4 +111,23 @@ efetuar testes
 A segunda opção para fácil utilização da API, é através do Postman, onde pode ser importado por
 este [arquivo](https://github.com/dpaula/customer-api/blob/main/Projeto%20AG%20Capital.postman_collection.json)
 
+## Acessando API Externamente
+
+- O deploy da última versão (1.0.0) API foi realizada na plataforma do Google Cloud e pode ser acessada nos
+  endereços
+    - http://35.247.249.163:2550/swagger-ui.html
+    - APIs
+        - [API - Customer-api](http://34.95.169.37:6060/swagger-ui.html)
+        - [API - Customer-api Health Check](http://34.95.169.37:6060/actuator/health)
+        - [API - Project-api](http://34.95.169.37:6070/swagger-ui/index.html)
+        - [API - Project-api Health Check](http://34.95.169.37:6070/actuator/health)
+
+- Outros Componentes
+    - [Eureka](http://34.95.169.37:8761/)
+    - [Zipkin](http://34.95.169.37:9411/zipkin/)
+    - [Postgres](http://34.95.169.37:5050/browser/) (senha: "password")
+
+- API estará disponível até 20/09/2023, caso esteja indisponível ou expirou a data, basta solicitar para ser
+  disponibilizada novamente
+
 
