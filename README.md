@@ -104,6 +104,6 @@ A principal documentação da API foi exportada via Swagger (link abaixo), e é 
 efetuar testes
 
 A segunda opção para fácil utilização da API, é através do Postman, onde pode ser importado por
-este [arquivo](https://github.com/dpaula/#)
+este [arquivo](https://github.com/dpaula/customer-api/blob/main/Projeto%20AG%20Capital.postman_collection.json)
 
 
