@@ -115,7 +115,6 @@ este [arquivo](https://github.com/dpaula/customer-api/blob/main/Projeto%20AG%20C
 
 - O deploy da última versão (1.0.0) API foi realizada na plataforma do Google Cloud e pode ser acessada nos
   endereços
-    - http://35.247.249.163:2550/swagger-ui.html
     - APIs
         - [API - Customer-api](http://34.95.169.37:6060/swagger-ui.html)
         - [API - Customer-api Health Check](http://34.95.169.37:6060/actuator/health)
