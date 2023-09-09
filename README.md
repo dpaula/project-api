@@ -100,7 +100,7 @@ Existem dois pré requisitos para execução da API:
 
 ## Testando API
 
-A principal documentação da API foi exportada via Swagger (link abaixo), e é a maneira mais simples (e eficiente) para
+A principal documentação da API foi exportada via Swagger (links acima), e é a maneira mais simples (e eficiente) para
 efetuar testes
 
 A segunda opção para fácil utilização da API, é através do Postman, onde pode ser importado por
